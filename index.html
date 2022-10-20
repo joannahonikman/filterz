@@ -1,0 +1,79 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function() { // Dropdown toggle
+$('.dropdown-toggle').hover(function() { 
+	//$('.dropdown').hide();
+	$(this).next('.dropdown').show();
+
+});
+
+$(document).onmouseover(function(e) 
+{ 
+var target = e.target; 
+if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+  { $('.dropdown').slideUp(); }
+});
+});
+
+</script>	
+</head>
+<body>
+
+<p><a href="https://www.renttherunway.com/products?" target="_blank">View All</a></p>
+
+<h4>Trending (even thought I hate that word)</h4><ul>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=bridgerton" target="_blank">Bridgerton</a></li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=sweater" target="_blank">Sweater Weather - Get Cozy!</a></li></ul>
+
+<h4>Categories</h4>
+<ul><li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=dress" class="dropdown-toggle" target="_blank">Dresses</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=little black dress" target="_blank">Little Black Dress</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=cocktail dress" target="_blank">Cocktail</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=black tie dress" target="_blank">Black Tie</a></li>
+	<li><a href="https://www.renttherunway.com/products/filters%5BsearchText%5D=gown" target="_blank">Gowns</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=casual dress" target="_blank">Casual</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=party dress" target="_blank">Party</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=wedding guest dress" target="_blank">Wedding</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=work dress" target="_blank">Work</a></li></ul>
+
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jumpsuits and rompers" class="dropdown-toggle" target="_blank">Jumpsuits & Rompers</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jumpsuits" target="_blank">Jumpsuits</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=rompers" target="_blank">Rompers</a></li></ul></li>
+
+<li><a href="https://www.renttherunway.com/products/clothing/top" class="dropdown-toggle">Tops</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=blouse" target="_blank">Blouses</a></li>
+	<li><a href="https://www.renttherunway.com/products/?filters%5BsearchText%5D=crop top" target="_blank">Cropped</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=tank top" target="_blank">Tanks</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=tunic" target="_blank">Tunics</a></li></ul></li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=knit" target="_blank">Knits</a></li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jackets and coats" class="dropdown-toggle" target="_blank">Jackets & Coats</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=blazer" target="_blank">Blazers</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=cape" target="_blank">Capes</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=fur coat" target="_blank">Faux Fur Coats</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jacket" target="_blank">Jackets</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=vest" target="_blank">Vests</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=wool" target="_blank">Wool Coats</a></li></ul></li>
+
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=bottoms" class="dropdown-toggle" target="_blank">Bottoms</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=pants" target="_blank">Pants</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=skirts" target="_blank">Skirts</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jeans" target="_blank" class="dropdown-toggle">Jeans</a><ul class="dropdown" style="display: none;">
+		<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=wide leg jeans" target="_blank">Wide Leg</a></li>
+		<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=skinny jeans" target="_blank">Skinny</a></li>
+		<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=high rise jeans" target="_blank">High Rise</a></li></ul>
+	</li></ul>
+	</li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=activewear" target="_blank">Activewear</a></li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=handbags" target="_blank" class="dropdown-toggle">Handbags</a><ul class="dropdown" style="display: none;">
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=hobo bag" target="_blank">Hobo</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=clutch bag" target="_blank">Clutch</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=shoulder bag" target="_blank">Shoulder</a></li>
+	<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=satchel bag" target="_blank">Satchel</a></li>
+</ul></li>
+<li><a href="https://www.renttherunway.com/products?filters%5BsearchText%5D=jewelry" target="_blank">Jewelry</a></li></ul></li></ul>
+</div>
+
+</body>
+</html>
